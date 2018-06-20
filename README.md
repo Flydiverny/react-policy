@@ -12,7 +12,7 @@ npm install react-policy
 
 Add the `PolicyProvider` to your `App`.
 
-```
+```js
 import React from 'react';
 import { PolicyProvider } from 'react-policy';
 
@@ -25,7 +25,7 @@ const policies = {
 ```
 
 
-```
+```js
 import React from 'react';
 import { Can } from 'react-policy';
 
@@ -42,7 +42,7 @@ export default MyComponent;
 ```
 
 ### Hoc
-```
+```js
 import React from 'react';
 import { withPolicy } from 'react-policy';
 
