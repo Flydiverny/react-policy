@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Provider } from './PolicyContext';
 
 const PolicyProvider = ({ children, policies }) => (
-  <Provider value={policies}>
+  <Provider value={(policy) => policies[policy]}>
     {children}
   </Provider>
 );

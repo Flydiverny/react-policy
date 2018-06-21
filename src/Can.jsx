@@ -4,8 +4,8 @@ import { Consumer } from './PolicyContext';
 
 const Can = ({ do: policy, children }) => (
   <Consumer>
-    {policies => {
-      const can = policies[policy];
+    {canDo => {
+      const can = canDo(policy);
 
       if (typeof can === 'undefined') {
         throw new Error(`Unknown policy: '${policy}'`);
